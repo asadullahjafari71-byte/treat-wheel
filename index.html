@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f0e8">
+    <title>The Treat Department</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page">
+
+        <header class="top">
+            <span class="small-label">A VERY IMPORTANT ANNOUNCEMENT</span>
+            <h1>The Treat Department</h1>
+            <div class="little-line"></div>
+        </header>
+
+        <section class="intro">
+            <p class="intro-main">So, you bought something new...</p>
+
+            <p>
+                And I believe this calls for a little celebration.
+                More importantly, I believe I deserve a treat.
+            </p>
+
+            <p>
+                Since I'm feeling generous, I'll let a spinning wheel
+                decide what happens next.
+            </p>
+
+            <p class="russian-intro">
+                Ты купила что-то новенькое... Думаю, это повод для
+                маленького праздника. А ещё я считаю, что заслужил угощение!
+            </p>
+        </section>
+
+        <section class="wheel-section">
+
+            <div class="wheel-wrapper">
+                <div class="pointer"></div>
+
+                <canvas id="wheel" width="600" height="600"></canvas>
+
+                <div class="wheel-center">
+                    <span>SPIN</span>
+                </div>
+            </div>
+
+            <button id="spinButton" class="spin-button">
+                GIVE IT A SPIN
+            </button>
+
+            <p class="wheel-note">No cheating. The wheel has spoken.</p>
+
+        </section>
+
+        <footer>
+            <span>Made with questionable intentions.</span>
+            <span class="footer-heart">♥</span>
+        </footer>
+
+    </main>
+
+    <!-- Result popup -->
+    <div class="modal-overlay" id="resultModal">
+        <div class="result-box">
+
+            <span class="result-label">THE WHEEL HAS DECIDED</span>
+
+            <h2>Well, look what we have here!</h2>
+
+            <p class="result-task" id="resultTask"></p>
+            <p class="result-russian" id="resultRussian"></p>
+
+            <p class="result-note">
+                Good luck. You're going to need it.
+            </p>
+
+            <button id="closeModal" class="close-button">
+                ALRIGHT, ALRIGHT
+            </button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
